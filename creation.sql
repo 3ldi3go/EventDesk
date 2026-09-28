@@ -40,9 +40,9 @@ titel varchar(50),
 omschrijving varchar(100)
 
 primary key(catnr)
-);
+); --was repeterend maar niet meer door ActiviteitCategorie
 
-create table ActviteitCategorie(
+create table ActiviteitCategorie(
 catnr int,
 acode int
 
@@ -56,7 +56,7 @@ tnr int not null,
 naam varchar(50) not null
 
 primary key(tnr),
-);
+); --was repeterend maar niet meer door ActiviteitTag
 
 create table ActiviteitTag(
 acode int,
@@ -75,7 +75,7 @@ school varchar(50),
 bedrijf varchar(50),
 medewerkerID int
 
-primary key(pcode)
+primary key(pcode),
 
 CONSTRAINT chk_persoon_soort CHECK (
     (soort = 'Student'    AND bedrijf IS NULL AND medewerkerID IS NULL AND studentID IS NOT NULL AND school IS NOT NULL)
