@@ -3,6 +3,7 @@ INSERT INTO Activiteit VALUES
 (2, 'AI Intro Lecture', 'Basis AI-concepten', 200, 'lecture', NULL, NULL),
 (3, 'Python Bootcamp', 'Intensieve Python-training', 25, 'bootcamp', NULL, NULL),
 (4, 'Scrum Training', 'Agile Scrum introductie', 20, 'training', NULL, NULL);
+(5, 'Python programming', 'Python programmas maken', 10, 'workshop', null, null);
 
 INSERT INTO Locatie VALUES
 (1, 'Lab 1', 'Campusgebouw B'),
